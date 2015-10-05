@@ -54,7 +54,7 @@ def getNetwork(weights, nfilename="./data/network.txt"):
             edgeAttr = {
                 "weight": weight,
                 "group": weights[weight][0],
-                "network": weights[weight][0]
+                "network": weights[weight][1]
             }
         n.add_edge(s[0], s[1], attr_dict=edgeAttr)
     nh.close()    
